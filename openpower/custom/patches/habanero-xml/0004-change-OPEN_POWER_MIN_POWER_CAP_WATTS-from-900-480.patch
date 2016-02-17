@@ -1,0 +1,25 @@
+From e1513dd2ace607c2e1c00a9286f8d8f92e8c2824 Mon Sep 17 00:00:00 2001
+From: FSP Build Team <fspbld@us.ibm.com>
+Date: Wed, 17 Feb 2016 13:11:38 -0600
+Subject: [PATCH] change OPEN_POWER_MIN_POWER_CAP_WATTS from 900-480
+
+---
+ habanero.xml |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/habanero.xml b/habanero.xml
+index 5a0a6d3..13ba4d2 100644
+--- a/habanero.xml
++++ b/habanero.xml
+@@ -5051,7 +5051,7 @@
+ 	</attribute>
+ 	<attribute>
+ 		<id>OPEN_POWER_MIN_POWER_CAP_WATTS</id>
+-		<default>900</default>
++		<default>480</default>
+ 	</attribute>
+ 	<attribute>
+ 		<id>OPEN_POWER_N_BULK_POWER_LIMIT_WATTS</id>
+-- 
+1.7.4.1
+
