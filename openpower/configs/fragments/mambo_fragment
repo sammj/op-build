@@ -1,0 +1,18 @@
+# No HostBoot for Mambo
+BR2_PACKAGE_HOSTBOOT=n
+BR2_PACKAGE_HOSTBOOT_BINARIES=n
+
+BR2_OPENPOWER_CONFIG_NAME="openpower-mambo"
+
+# no OCC for Mambo either
+BR2_PACKAGE_OCC=n
+
+# we don't need a PNOR layout for Mambo
+BR2_PACKAGE_OPENPOWER_PNOR=n
+
+# no cappucode either
+BR2_PACKAGE_CAPP_UCODE=n
+
+# skiboot will be built but we don't need embedded payload
+BR2_PACKAGE_SKIBOOT=y
+BR2_PACKAGE_SKIBOOT_EMBED_PAYLOAD=n

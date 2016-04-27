@@ -1,0 +1,20 @@
+# No HostBoot, OCC, or PNOR required for Firenze builds
+BR2_PACKAGE_HOSTBOOT=n
+BR2_PACKAGE_HOSTBOOT_BINARIES=n
+
+BR2_OPENPOWER_CONFIG_NAME="openpower-firenze"
+
+BR2_PACKAGE_OCC=n
+
+BR2_PACKAGE_OPENPOWER_PNOR=n
+
+# no cappucode either
+BR2_PACKAGE_CAPP_UCODE=n
+
+# skiboot will be built but we don't need embedded payload
+BR2_PACKAGE_SKIBOOT=y
+BR2_PACKAGE_SKIBOOT_EMBED_PAYLOAD=n
+
+# do not include rootfs in zImage
+BR2_TARGET_ROOTFS_CPIO=y
+BR2_TARGET_ROOTFS_INITRAMFS=n
